@@ -1,9 +1,10 @@
-<div>{{#each model as |board|}}
-  {{#link-to 'answer'}}
-  {{question-tile board=board}}
-  {{/link-to}}
+<h3>Hello and welcome!</h3>
+
+
+<div>
+  {{#each model as |board|}}
+      {{question-tile board=board}}
   {{/each}}
 </div>
 
 {{question-board saveQuestion2="saveQuestion3"}}
-{{answer-tile saveAnswer2="saveAnswer3"}}

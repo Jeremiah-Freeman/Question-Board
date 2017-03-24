@@ -1,5 +1,7 @@
 <div>
-Author: {{board.author}}
-<br>
-Quesiton:{{board.question}}
+  {{#link-to 'answer' board.id }}
+    Author: {{board.author}}
+    <br>
+    Quesiton:{{board.question}}
+  {{/link-to}}
 </div>

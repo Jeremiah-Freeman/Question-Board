@@ -2,11 +2,22 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findRecord('answer', params.answer_id);
+    return this.store.findRecord('board', params.answer_id);
   },
-  saveAnswer3(params) {
-    var newAnswer = this.store.createRecord('board', params);
-    newAnswer.save();
-    this.transitionTo('answer');
+  actions: {
+    update(answer, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          answer.set(key,params[key]);
+        }
+      });
+      answer.save();
+      this.transitionTo('answer');
+    },
+    saveAnswer3(params) {
+      var newAnswer = this.store.createRecord('board', params);
+      newAnswer.save();
+      this.transitionTo('answer');
+    }
   }
 });
