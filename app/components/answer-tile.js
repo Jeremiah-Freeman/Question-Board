@@ -12,7 +12,7 @@ export default Ember.Component.extend({  actions: {
         name: this.get('name'),
         answer: this.get('theAnswer')
       };
-      this.sendAction('saveAnswer1', params);
+      this.sendAction('saveAnswer', params);
     }
   }
 });
