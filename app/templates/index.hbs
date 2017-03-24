@@ -2,9 +2,20 @@
 
 
 <div>
-  {{#each model as |board|}}
+  {{#each model.boards as |board|}}
+
       {{question-tile board=board}}
+
   {{/each}}
 </div>
 
 {{question-board saveQuestion2="saveQuestion3"}}
+
+<div>
+  {{#each model.answers as |answer|}}
+
+      <li>{{answer.name}} {{answer.answer}}</li>
+
+  {{/each}}
+</div>
+<hr>
