@@ -1,4 +1,6 @@
 <div>{{#each model as |board|}}
-{{question-tile board=board}}
-{{/each}}
+  {{#link-to 'contact'}}
+  {{question-tile board=board}}
+  {{/link-to}}
+  {{/each}}
 </div>
