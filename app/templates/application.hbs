@@ -2,29 +2,27 @@
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
+        <div class="logo">
+          <img src="https://www.iconattitude.com/icons/open_icon_library/emblems/png/128/emblem-question.png" alt="logo">
+          <p class="intro"></p>
+        </div>
         <a class="navbar-brand" href="/">| {{#link-to 'index'}}Questions{{/link-to}}</a>
       </div>
-
-      <!-- <div class="logo">
-      <img src="img/splogo.jpg" alt="logo">
-      <p class="intro"></p>
-    </div> -->
-    <!-- <div class="center-div">
-    <div class="sidebar"> -->
-    <ul class="nav navbar-nav">
-      
-      <li><a href="/">| {{#link-to 'index'}}Home{{/link-to}}</a></li>
-
-      <li><a href="contact">| {{#link-to 'contact'}}contact{{/link-to}}</a></li>
-
-    </ul>
-    <form class="navbar-form navbar-left">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
+      <div class="center-div">
+        <div class="sidebar">
+          <ul class="nav navbar-nav">
+            <li><a href="/">| {{#link-to 'index'}}Home{{/link-to}}</a></li>
+            <li><a href="contact">| {{#link-to 'contact'}}contact{{/link-to}}</a></li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
       </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
-  </div>
-</nav>
+    </div>
+  </nav>
 </div>
 {{outlet}}
