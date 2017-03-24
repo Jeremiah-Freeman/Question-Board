@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
-export default Ember.Component.extend({  actions: {
+export default Ember.Component.extend({
+  actions: {
     saveAnswer1() {
       var params = {
         answer: this.get('answer')
@@ -10,7 +11,8 @@ export default Ember.Component.extend({  actions: {
     saveAnswer() {
       var params = {
         name: this.get('name'),
-        answer: this.get('theAnswer')
+        answer: this.get('theAnswer'),
+        board: this.get('board')
       };
       this.sendAction('saveAnswer', params);
     }
