@@ -1,7 +1,9 @@
 <form>
   <div class="form-group">
-    <label class=""for="answerInput">Do you know?</label>
-    {{input value=answerInput id="answerInput" }}
+    <label class=""for="answerInput">Do you know?</label><br>
+    {{input value=answerInput id="answerInput" placeholder="your name here"}}
+    {{input value=answerInput id="answerInput" placeholder="your answer here"}}
+
     <button class="btn btn-primary btn-xs"{{action 'saveAnswer1'}}>add</button>
   </div>
 </form>
