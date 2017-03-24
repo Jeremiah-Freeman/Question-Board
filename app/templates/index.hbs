@@ -4,12 +4,4 @@
   {{/link-to}}
   {{/each}}
 </div>
-<div>
-  <form>
-    <div class="form-group">
-      <label class=""for="newQuestion">New Question</label>
-      {{input value=newQuestion id="newQuestion" }}
-      <button class="btn btn-info btn-xs"{{action 'saveQuestion1'}}>add</button>
-    </div>
-  </form>
-</div>
+{{question-board}}
