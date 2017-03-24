@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('board');
+    return Ember.RSVP.hash({
+      boards: this.store.findAll('board'),
+      reviews: this.store.findAll('answer');
+    }):
   },
   actions: {
     saveQuestion3(params) {
