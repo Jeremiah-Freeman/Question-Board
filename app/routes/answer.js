@@ -5,15 +5,7 @@ export default Ember.Route.extend({
     return this.store.findRecord('board', params.answer_id);
   },
   actions: {
-    update(answer, params) {
-      Object.keys(params).forEach(function(key) {
-        if(params[key]!==undefined) {
-          answer.set(key,params[key]);
-        }
-      });
-      answer.save();
-      this.transitionTo('answer');
-    },
+  
     saveAnswer3(params) {
       var newAnswer = this.store.createRecord('board', params);
       newAnswer.save();

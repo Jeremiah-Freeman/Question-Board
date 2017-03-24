@@ -1,9 +1,9 @@
 <h3>The question posted by {{model.author}} is {{model.question}}</h3>
-{{answer-tile board=model saveAnswer="saveAnswer"}}
+{{answer-tile board=model update="update" saveAnswer="saveAnswer"}}
 
 <h3>Previous answers</h3>
 <ul>
   {{#each model.answers as |answer|}}
-    <li>{{answer-tile answer=answer}}</li>
+    <li>{{answer-display answer=answer}}</li>
   {{/each}}
 </ul>
