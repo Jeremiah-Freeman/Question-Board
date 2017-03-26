@@ -2,27 +2,21 @@
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <div class="logo">
-          <img src="https://www.iconattitude.com/icons/open_icon_library/emblems/png/128/emblem-question.png" alt="logo">
-          <p class="intro"></p>
-        </div>
-        <a class="navbar-brand" href="/">| {{#link-to 'index'}}Questions{{/link-to}}</a>
+        <a href="/">{{#link-to 'index'}}<img src="https://www.iconattitude.com/icons/open_icon_library/emblems/png/128/emblem-question.png" alt="logo">{{/link-to}}</a>
+        <p class="intro"></p>
       </div>
-      <div class="center-div">
-        <div class="sidebar">
-          <ul class="nav navbar-nav">
-            <li><a href="/">| {{#link-to 'index'}}Home{{/link-to}}</a></li>
-            <li><a href="contact">| {{#link-to 'contact'}}contact{{/link-to}}</a></li>
-          </ul>
-          <form class="navbar-form navbar-left">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
+      <div class="navbaralign">
+        <div class="center-div">
+          <div class="sidebar">
+            <ul class="nav navbar-nav">
+              <li><a href="/">{{#link-to 'index'}}Home{{/link-to}}</a></li>
+              <li><a href="contact">|&emsp;&emsp;{{#link-to 'contact'}}contact{{/link-to}}</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </nav>
-{{outlet}}
+  <hr>
+  {{outlet}}
 </div>

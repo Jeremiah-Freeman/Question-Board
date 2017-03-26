@@ -1,8 +1,8 @@
 <form>
-  <div class="form-group">
+  <div id="resetinput"class="form-group">
     <label class=""for="name">Do you know?</label><br>
-    {{input value=name id="name" placeholder="your name here"}}
-    {{input value=theAnswer id="theAnswer" placeholder="your answer here"}}
+    {{input value=name id="name" placeholder="name"}}
+    {{input value=theAnswer id="theAnswer" placeholder="answer"}}
     <button class="btn btn-primary btn-xs"{{action 'saveAnswer'}}>add</button>
   </div>
 </form>

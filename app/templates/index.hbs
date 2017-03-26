@@ -1,12 +1,13 @@
+
 <h3>Hello and welcome!</h3>
 
 
 <div>
   {{#each model.boards as |board|}}
-    {{question-tile board=board}}
+    {{question-tile update="update" board=board}}
   {{/each}}
 </div>
 
-{{question-board update="update" saveQuestion2="saveQuestion3"}}
+{{question-board saveQuestion2="saveQuestion3"}}
 
 <hr>

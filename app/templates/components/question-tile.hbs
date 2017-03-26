@@ -1,8 +1,8 @@
 <div>
   {{#link-to 'answer' board.id }}
-    Author: {{board.author}}
+    <strong>Quesiton:</strong>&emsp;{{board.question}}
     <br>
-    Quesiton:{{board.question}}
+    <strong>Author:</strong>&emsp;&emsp;{{board.author}}
   {{/link-to}}
   {{update-question board=board update="update"}}
 </div>

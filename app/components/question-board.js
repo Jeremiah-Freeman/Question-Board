@@ -9,6 +9,9 @@ export default Ember.Component.extend({
       };
       this.sendAction('saveQuestion2', params);
     },
+    function myFunction() {
+      document.getElementById("resetinput").reset();
+  },
     update(board, params) {
       this.sendAction('update', board, params);
     }
