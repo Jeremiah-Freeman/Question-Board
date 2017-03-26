@@ -12,7 +12,7 @@ img {
 }
 
 .navbaralign {
-  margin-top: 21px;
+  margin-top: 30px;
   margin-right: 5%;
   margin-left: 39%;
   color: green;
@@ -39,4 +39,9 @@ img {
 
 #qaalign {
   margin-left: 16%;
+}
+
+#logoname {
+  color: grey;
+  margin-left: 12px;
 }

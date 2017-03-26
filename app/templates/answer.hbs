@@ -1,10 +1,10 @@
 
-<h3 id="qaalign">The question posted by {{model.author}} is {{model.question}}</h3>
+<h3 id="qaalign">The question posted by {{model.author}} is: " {{model.question}} "</h3>
 <br>
 
 {{answer-tile board=model update="update" saveAnswer="saveAnswer"}}
 
-<h3>Previous answers</h3>
+<h3>Answers</h3>
 
 <ul>
   {{#each model.answers as |answer|}}
